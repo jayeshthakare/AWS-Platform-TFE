@@ -6,4 +6,5 @@ private_subnet_cidr = "10.20.2.0/24"
 availability_zone   = "ap-south-1a"
 instance_name       = "test-web-server"
 instance_type       = "t3.micro"
+instance_count      = 5
 key_name            = "test-web-key"

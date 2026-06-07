@@ -37,8 +37,9 @@ module "security_groups" {
 module "ec2" {
   source = "../../modules/ec2"
 
-  instance_name = var.instance_name
-  instance_type = var.instance_type
+  instance_name  = var.instance_name
+  instance_type  = var.instance_type
+  instance_count = var.instance_count
 
   subnet_id         = module.subnets.public_subnet_id
   security_group_id = module.security_groups.security_group_id
